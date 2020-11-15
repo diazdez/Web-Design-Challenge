@@ -20,14 +20,14 @@
       <!--Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark background-color" style="background-color: #6a8180be;" >
           <div class="container">
-            <a class="navbar-brand offset-0 alert-secondary bigger-block" class="navbar-brand" style="background-color: rgb(74, 155, 144);" href="LandingPage.html" > Latitude </a>
+            <a class="navbar-brand offset-0 alert-secondary bigger-block" class="navbar-brand" style="background-color: rgb(74, 155, 144);font-weight: bold; font-size: x-large;" href="LandingPage.html" > Latitude </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" style="font-weight: bold;" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Plots
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -38,10 +38,10 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="comparison.html">Comparison</a>
+                  <a class="nav-link" style="font-weight: bold;" href="comparison.html">Comparison</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="data.html">Data</a>
+                  <a class="nav-link" style="font-weight: bold;" href="data.html">Data</a>
                 </li>
               </ul>
             </div>
@@ -50,47 +50,47 @@
       
       <!--create container, rows and columns and add images -->
       <div class = "container">
-        <div class = "row mt-8">
+        <div class = "row mt-10">
             <div class = "col-8">
                 <div class="jumbotron">
                     <h1>Summary: Latitude vs X</h1>
-                    <hr class = "my-4">
+                    <hr class = "my-3">
                     <p class="lead">
 
                       <img src="Resources/assets/images/Fig1.png" class="vizualization rounded float-left" alt="Max Temperature Graph" style="float:left;width:400px;height:300px;padding-right:10px;display:block;">
                 
                       <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. 
-                          To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.  </p> 
+                          To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.  
+                        </p> 
                       
                       <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude.
-                          Factors we looked at included: temperature, cloudiness, wind speed, and humidity. 
-                          This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                          Factors we looked at included: <a style="font-size: larger ; font-weight: bold;" > (max) temperature, cloudiness, wind speed, and humidity.</a>  
+                          This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+                        </p>
                   </div>
               </div>
 
-              <!--visualizations section-->
+                          <!--visualizations section-->
               <div class= "col-4">
-                <div class="jumbotron">
-                      <h3>Visualizations</h3>
-                      <hr>
-                      <div class="row">
-                          <div class="col-3 col-md-6">
-                              <a href="temperature.html"><img src="Resources/assets/images/Fig1.png" width="100%"  alt="temperature"></a> 
+                  <div class="jumbotron">
+                      <h2>Visualizations</h2>
+                      <hr class = "my-3">
+                          <div class = "row">
+                              <div class = "col-6">
+                              <a href="temperature.html"><img src="Resources/assets/images/Fig1.png" alt="temperature" style="width:100%;height:90%;display:block;"></a>
+                              </div>
+                              <div class = "col-6">
+                              <a href="humidity.html"><img src="Resources/assets/images/Fig2.png"alt="humidity" style="width:100%;height:90%;display:block;"></a>
+                              </div>                       
                           </div>
-                        
-                          <div class="col-3 col-md-6">
-                              <a href="humidity.html"><img src="Resources/assets/images/Fig2.png" width="100%" alt="humidity"></a>
-                          </div>
-                        
-                          <div class="col-3 col-md-6">
-                              <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" width="100%"  alt="cloudiness"></a>
-                          </div>
-  
-                          <div class="col-3 col-md-6">
-                              <a href="windspeed.html"><img src="Resources/assets/images/Fig4.png"width="100%"  alt="wind speed"></a>
-                          
-                          </div>
-                      </div>
+                          <div class = "row">
+                              <div class = "col-6">
+                              <a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" alt="cloudiness" style="width:100%;height:90%;display:block;"></a>
+                              </div>
+                              <div class = "col-6">
+                              <a href="windspeed.html"><img src="Resources/assets/images/Fig4.png" alt="wind speed" style="width:100%;height:90%;display:block;"></a>
+                              </div>  
+                          </div>                                                    
                   </div>
               </div>
           </div>
@@ -100,8 +100,9 @@
 <footer> 
     <br>
     <br> 
-    - Main Page (Latitude) -<br>  
-    <a style="font-style: italic;" > Web Design Challenge - Desiree Diaz  </a><br>
+    <center>- Main Page (Latitude) -<br>  </center>
+    <a style="font-style: italic;" > <center> Web Design Challenge - Desiree Diaz  </center></a><br>
+    <br>
     <hr>
   </footer>
 
